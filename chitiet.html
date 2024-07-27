@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASINGMENT</title>
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+  <header class="header navigation--sticky" style="margin-top: 0px">
+    <div class="header__top">
+      <div class="container-fluid mb-0">
+        <div class="row">
+          <div class="col-12 text-right">
+            <p class="user-check d-inline">
+              <a href="king-and-queen">👑 King and Queen</a>
+            </p>
+            <p class="user-check d-inline ">
+              <a href="dangnhap.html">
+                <i class="fa fa-users" aria-hidden="true"></i> My Account</a>
+            </p>
+            <p class="hotline-top d-inline">
+              <i class="fas fa-phone-alt"></i>
+              <span class="d-none d-lg-inline-block">Hotline:</span>
+              <a href="tel:0909300746">0909300746</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class=" scroll-window navigation navbar navbar-expand-xl shadow-sm ">
+      <div class="container-fluid">
+          <div class="col-lg-2 navigation__column left ">
+            <div class="header__logo">
+                <a class="ps-logo" href="index.html">
+                    <img src="https://kingshoes.vn/data/upload/media/cửa-hàng-giày-sneaker-chính-hàng-uy-tín-nhất-dến-king-shoes-authenti-hcm-6.png" alt="Cửa Hàng Giày Sneaker Chính Hãng Tại TpHcm - KING SHOES">
+                </a>
+            </div>
+          </div>
+          <div class="input-group form-search d-none">
+            <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Dollar amount (with dot and two decimal places)">
+            <span class="input-group-text">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+          </div>
+          <div class="col-lg-8 navigation__column d-xl-block offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            
+            <div class="offcanvas-header shadow-lg">
+              <h5 class="offcanvas-title" id="offcanvasRightLabel">Danh mục</h5>
+              <button type="button" class="cart-items" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="collslapse navbar-collapse offcanvas-body" id="navbarNavDropdown">
+              <ul class="menu navbar-nav justify-content-center " >
+                <div class="input-group form-search-mobile d-none">
+                  <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Dollar amount (with dot and two decimal places)">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="gioi-thieu">Giới thiệu</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownNike" role="button" data-bs-toggle="dropdown" aria-expanded="false">Nike</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdidas" role="button" data-bs-toggle="dropdown" aria-expanded="false">Adidas</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdidas">
+                    <li><a class="dropdown-item" href="nam">Nam</a></li>
+                    <li><a class="dropdown-item" href="nu">Nữ</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownJordan" role="button" data-bs-toggle="dropdown" aria-expanded="false">Jordan</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownJordan">
+                    <li><a class="dropdown-item" href="air-jordan">AIR JORDAN</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownYeezy" role="button" data-bs-toggle="dropdown" aria-expanded="false">Yeezy</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownYeezy">
+                    <li><a class="dropdown-item" href="yeezy-boost-350">YEEZY BOOST 350</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOtherBrands" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Brands</a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownOtherBrands">
+                    <li><a class="dropdown-item" href="sneaker-authentic">SNEAKER AUTHENTIC</a></li>
+                    <li><a class="dropdown-item" href="giay-the-thao-chay-bo--tap-gym">Giày thể thao chạy bộ -tập gym</a></li>
+                    <li><a class="dropdown-item" href="giay-tennis-nike-chinh-hang">Giày tennis nike chính hãng</a></li>
+                    <li><a class="dropdown-item" href="dep-authentic">Dép Authentic</a></li>
+                    <li><a class="dropdown-item" href="crep-protect-ve-sinh-giay-sneaker">Crep Protect vệ sinh giày Sneaker</a></li>
+                    <li><a class="dropdown-item" href="giay-thanh-ly">Giày Thanh Lý</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="sale">Sale</a></li>
+                <li class="nav-item"><a class="nav-link" href="day-giay">Dây Giày</a></li>
+                <li class="nav-item"><a class="nav-link" href="spa-giay">Spa Giày</a></li>
+                <li class="nav-item"><a class="nav-link" href="lien-he">Liên hệ</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 navigation__column right d-flex align-items-center justify-content-flex-end">
+              <div class="items d-flex align-items-center ">
+                  <a href="giohang.html">
+                    <div class="cart-items">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span>0</span>
+                    </div>
+                  </a>
+                  <div class="cart-items">
+                      <i class="fa-regular fa-heart"></i>
+                      <span>1</span>
+                  </div>
+              </div>
+              <div class="menulist d-none">
+                  <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+              </div>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="Product-detail">
+    <div class="container box-product-detail">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+              <li class="breadcrumb-item"><a href="#">Chi tiết sản phẩm</a></li>
+              <li class="breadcrumb-item active" aria-current="page">YEEZY BOOST 700 V2 STATIC</li>
+            </ol>
+        </nav>
+        <div class="row justify-content-center">
+            <div class="col-lg-6 row pt-3" >
+                <div class="chitiet-info">
+                  <div class="main">
+                    <img class="img-feature img-fluid" src="img/sp/nike-1.jpeg" id="anh">
+                    <!-- <div class="control prev">
+                      <img src="/img/left.png" alt="">
+                    </div>
+                    <div class="control next">
+                      <img src="/img/right.png" alt="">
+                    </div> -->
+                  </div>    
+                  <div class="list-image">
+                    <div class="active_bd"> <img class="active-img img-fluid" src="img/sp/nike-1.jpeg" alt=""></div>
+                    <div> <img class="active-img img-fluid" src="img/sp/nike-2.jpeg" alt=""></div>
+                    <div> <img class="active-img img-fluid" src="img/sp/nike-3.jpeg" alt=""></div>
+                    <div> <img class="active-img img-fluid" src="img/sp/nike-4.jpg" alt=""></div>
+                    <div> <img class="active-img img-fluid" src="img/sp/nike-5.jpeg" alt=""></div>
+                    <div> <img class="active-img img-fluid" src="img/sp/nike-6.jpeg" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              
+            <div class="col-lg-6 pt-3">
+                <div class="product__details__text">
+                    <div class="product-tag">
+                        <div class="bestseller-tag">#Bán chạy</div>
+                        <div class="sold-tag">Đã bán: 41</div>
+                    </div>
+                    <h1>YEEZY BOOST 700 V2 STATIC</h1>
+                    <div class="info-product">
+                        <div class="rate-sku">
+                            <div class="rate">
+                                <i class="fas fa-star"></i><span class="ml-2">5/5</span>
+                            </div>
+                            <div class="sku">
+                                Mã: ABC_xJ                                   
+                            </div>
+                            <div class="status">
+                                <span class="badge text-bg-success">Còn hàng</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-product-price">
+                        <h3>Giá: <span>1.000.000</span> Đ</h3>
+                    </div>
+                    <div class="info-product-size">
+                        <h3>Kích cỡ:</h3>
+                        <div class="item-size">          
+                            <button type="button" class="btn togtle check checked_cl">40</button>
+                            <button type="button" class="btn togtle check">41</button>
+                            <button type="button" class="btn togtle check">42</button>
+                            <button type="button" class="btn togtle check">43</button>
+                            <button type="button" class="btn togtle check">44</button>                            
+                        </div>
+                        <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasCenter" aria-controls="offcanvasCenter">
+                            <p class="huongdan">Hướng dẫn chọn size</p>
+                        </div>
+
+                        <div class="offcanvas form-huongdan offcanvas-center" tabindex="-1" id="offcanvasCenter" aria-labelledby="offcanvasCenterLabel">
+                          <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                          </div>
+                          <div class="offcanvas-body">
+                            <div class="container">
+                                <div class="row pd-2 ">
+                                    <img src="img/huongdan.png" alt="">
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <h3>Số lượng:</h3>
+                        <div class="input-group ">
+                          <button class="btn btn-warning" type="button" id="decreaseBtn">-</button>
+                          <input type="text" class="form-control focus" id="quantityInput" value="10">
+                          <button class="btn btn-warning" type="button" id="increaseBtn">+</button>
+                        </div>
+                    </div>
+                    <div class="gioithieusp">
+                      <h3>Giới thiệu: </h3>
+                      <p>
+                        Yeezy Boost 700 V2 Static là một phiên bản của dòng giày Yeezy Boost, nổi tiếng được thiết kế bởi Kanye West. 
+                      </p>
+                    </div>
+                    <div class="list-group-btn">
+                      <a href="giohang.html">
+                        <button class="btn btn-dark">
+                          <i class="fa-solid fa-cart-plus"></i>Thêm giỏ hàng</button>
+                      </a>
+                      <button class="btn btn-danger buynow" onclick="return(alert('chưa có trang này thầy ơi'))">Mua Ngay</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-12 pt-3">
+              <div class="product-info-comment">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Mô Tả</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Bình luận</button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-6 pt-4">
+                          <div class="product-box">
+                            <h4 class="product-title">YEEZY BOOST 700 V2 STATIC</h4>
+                            <img class="product-image" src="img/sp/nike-8.jpeg" height="auto" width="200px" alt="YEEZY BOOST 700 V2 STATIC">
+                            <p class="product-description">Yeezy Boost 700 V2 Static là một phiên bản của dòng giày Yeezy Boost, nổi tiếng được thiết kế bởi Kanye West. Đặc điểm nổi bật của dòng này là sự kết hợp của các màu xám và trắng trên phần upper cùng với các chi tiết phản quang. Sản phẩm này sử dụng công nghệ Boost để mang lại cảm giác thoải mái tối đa và có đế cao su đặc biệt cho độ bám tốt trên mọi bề mặt. Yeezy Boost 700 V2 Static được yêu thích với thiết kế sạch sẽ và tối giản.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <div class="container">
+                      <div class="row pt-5">
+                        <div class="comment-form">
+                          <h4>Bình luận</h4>
+                          <form id="commentForm">
+                            <div class="form-group">
+                              <label for="name">Họ và tên:</label>
+                              <input class="form-control" type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email:</label>
+                              <input class="form-control" type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                              <label for="comment">Nội dung bình luận:</label>
+                              <textarea id="comment" name="comment" required></textarea>
+                            </div>
+                            <div class="form-group">
+                              <button class="btn text-bg-dark">Gửi bình luận</button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="Product-Lienquan" class="pt-5">
+    <div class="container">
+      <div class="content-Pd pt-4 pb-4">
+        <h5><strong>Sản Phẩm Liên Quan</strong></h5>
+      </div>
+      <div class="swiper-container">
+        <div class="row">
+          <div class=" collums-me col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 ">
+            <div class="card">
+              <img src="img/sp/nike-1.jpeg" class="card-img-top" alt="...">
+              <div class="card-content">
+                <a class="name" href="chitiet.html">
+                  <p>ADIDAS CAMPUS 00S</p>
+                </a>
+                <div class="caterory">
+                  <strong>Danh mục: </strong><span>Nike</span>
+                </div>
+                <div class="items-cart-price ">
+                  
+                  <div class="info-price">
+                    <strong >Giá:</strong>
+                    <i class="add-items">10000000 $</i>
+                  </div>
+                  <div class="add-cart">
+                    <span>Thêm</span>
+                    <i class="fa-solid fa-circle-plus add-items"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" collums-me col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 ">
+            <div class="card">
+              <img src="img/sp/nike-1.jpeg" class="card-img-top" alt="...">
+              <div class="card-content">
+                <a class="name" href="chitiet.html">
+                  <p>ADIDAS CAMPUS 00S</p>
+                </a>
+                <div class="caterory">
+                  <strong>Danh mục: </strong><span>Nike</span>
+                </div>
+                <div class="items-cart-price ">
+                  
+                  <div class="info-price">
+                    <strong >Giá:</strong>
+                    <i class="add-items">10000000 $</i>
+                  </div>
+                  <div class="add-cart">
+                    <span>Thêm</span>
+                    <i class="fa-solid fa-circle-plus add-items"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" collums-me col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 ">
+            <div class="card">
+              <img src="img/sp/nike-1.jpeg" class="card-img-top" alt="...">
+              <div class="card-content">
+                <a class="name" href="chitiet.html">
+                  <p>ADIDAS CAMPUS 00S</p>
+                </a>
+                <div class="caterory">
+                  <strong>Danh mục: </strong><span>Nike</span>
+                </div>
+                <div class="items-cart-price ">
+                  
+                  <div class="info-price">
+                    <strong >Giá:</strong>
+                    <i class="add-items">10000000 $</i>
+                  </div>
+                  <div class="add-cart">
+                    <span>Thêm</span>
+                    <i class="fa-solid fa-circle-plus add-items"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" collums-me col-sm-6 col-md-4 col-lg-4 col-xl-3 mb-5 ">
+            <div class="card">
+              <img src="img/sp/nike-1.jpeg" class="card-img-top" alt="...">
+              <div class="card-content">
+                <a class="name" href="chitiet.html">
+                  <p>ADIDAS CAMPUS 00S</p>
+                </a>
+                <div class="caterory">
+                  <strong>Danh mục: </strong><span>Nike</span>
+                </div>
+                <div class="items-cart-price ">
+                  
+                  <div class="info-price">
+                    <strong >Giá:</strong>
+                    <i class="add-items">10000000 $</i>
+                  </div>
+                  <div class="add-cart">
+                    <span>Thêm</span>
+                    <i class="fa-solid fa-circle-plus add-items"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="bg-black">
+    <div class="container-fluid mb-0">
+      <div class="row pt-3 justify-content-between">
+        <div class="col-lg-3 col-sm-12  col-md-5 ft-left border-right">
+          <div class="ft-logo">
+            <img src="img/Logo_web.png" alt="">
+          </div>
+          <div class="info-made d-flex flex-column">
+            <h4>
+              Thông tin liên hệ
+            </h4>
+            <div class="info-ct">
+              <h5 class="info-ft-ct">⛪Địa chỉ: 18/4 Mỹ Huề ,Trung Chánh ,Hóc Môn </h5>
+              <h5 class="info-ft-ct">  Email : phamthetoan.aloa.vn@gmail.com </h5>
+              <h5 class="info-ft-ct"> Fanpage chính thức: <a href="">Phạm Toàn</a> </h5>
+              <h5 class="info-ft-ct"> ☎️ Hotline Hỗ Trợ: 0909.300.746 - 0909.45.0001 </h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-9 col-sm-12 col-md-7 ">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-3 col-sm-4">
+                  <div class="gioithieu">
+                    <h4>Hỗ Trợ Khách Hàng</h4>
+                    <div class="list-thongtin">
+                      <li><a href="">Chăm sóc khách hàng</a></li>
+                        <li><a href="">Thanh toán</a></li>
+                        <li><a href="">Hướng dẫn mua hàng</a></li>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-sm-3">
+                  <div class="gioithieu">
+                    <h4>Chính sách</h4>
+                    <div class="list-thongtin">
+                      <li><a href="">Chế độ bảo hành</a></li>
+                        <li><a href="">Chính sách đổi hàng</a></li>
+                        <li><a href="">Bảo mật thông tin</a></li>
+                        <li><a href="">Chính sách giao nhận</a></li>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-sm-5">
+                  <div class="gioithieu">
+                    <h4>Chứng nhận</h4>
+                    <div class="list-thongtin">
+                      <p>Số ĐKKD: 41N8041309 cấp ngày 17/8/2018. Nơi cấp Ủy Ban Nhân Dân Quận Tân Bình. Hộ Kinh Doanh: KINGSHOES. Hotline: 0909.300.746</p>
+                      <li>
+                        <img src="img/chungnhan.png" alt="">
+                      </li>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>  
+        <div class="col-lg-12">
+          <div class="coppyright"> © Coppyright PS31110_PHAMTHETOAN_2024 </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://kit.fontawesome.com/d22cbf7e70.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
+
+

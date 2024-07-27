@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASINGMENT</title>
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body ng-app="MyApp">
+  <div class="MyCtrl" ng-controller="MyCtrl">
+    <header ng-include="'./partial/header.html'" class="header navigation--sticky" style="margin-top: 0px">
+ 
+    </header>
+
+
+    <section id="about" class="mt-3 mb-3">
+        <div class="container">
+            <div class="row">
+                <div class="select_maps col-md-4 col-sm-12 col-xs-12">
+                    <div class="aa mid_fot_h contact_r">
+                        <ul class="contact padding-0">
+                            <li class="li_footer_h">
+                                <span class="txt_content_child">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="add">
+                                        Toà nhà Ladeco, 266 Đội Cấn, phường Liễu Giai, Quận Ba Đình, Hà Nội                                        
+                                    </span>
+                                </span>
+                            </li>
+                            <li class="li_footer_h">
+                                <i class="fas fa-mobile-alt"></i>
+                                <a href="tel:19006750">19006750</a>                                    
+                            </li>
+                            <li class="li_footer_h">
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:coolteam@gmail.com"> coolteam@gmail.com</a>                                    
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="page-login page_cotact">
+                        <h1 class="title-head-contact a-left"><span>Liên hệ với chúng tôi</span></h1>
+                        <div id="pagelogin" class="margin-top-0">
+                            <form method="post" action="/postcontact" id="contact" accept-charset="UTF-8">
+                                <div class="form-signup clearfix">
+                                    <div class="row group_contact">
+                                        <div class="form-group mb-0 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <input placeholder="Họ và tên" type="text" class="form-control  form-control-lg" required="" value="" name="contact[Name]">
+                                        </div>
+                                        <div class="form-group mb-0 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <input placeholder="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" id="email1" class="form-control form-control-lg" value="" name="contact[email]">
+                                        </div>
+                                        <div class="form-group mb-0 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <textarea placeholder="Nội dung" name="contact[body]" id="comment" class="form-control content-area form-control-lg" rows="5" required=""></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <button type="submit" class="btn btn-primary btn-comment button_gradient">Gửi liên hệ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="select_maps col-md-8 col-sm-12 col-xs-12">
+                    <div class="section_mapss margin-bottom-50">
+                        <div class="box-maps">
+                            <div class="iFrameMap">
+                                <div class="google-map">
+                                    <div id="contact_map" class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.443661489921!2d106.62525347480609!3d10.853821089299668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752bee0b0ef9e5%3A0x5b4da59e47aa97a8!2zQ8O0bmcgVmnDqm4gUGjhuqduIE3hu4FtIFF1YW5nIFRydW5n!5e0!3m2!1svi!2s!4v1715529286714!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+   
+
+    <footer ng-include="'./partial/footer.html'" id="footer" class="bg-black">
+      
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://kit.fontawesome.com/d22cbf7e70.js" crossorigin="anonymous"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+

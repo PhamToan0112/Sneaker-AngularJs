@@ -1,0 +1,278 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASINGMENT</title>
+  <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body ng-app="MyApp" >
+  <div class="MyCtrl" ng-controller="MyCtrl">
+    <header class="header navigation--sticky" style="margin-top: 0px">
+        <div class="header__top">
+            <div class="container-fluid mb-0">
+              <div class="row">
+                <div class="col-12 text-right">
+                  <p class="user-check d-inline">
+                    <a href="king-and-queen">👑 King and Queen</a>
+                  </p>
+                  <p class="user-check d-inline">
+                    <a href="#!dangnhap">
+                      <i class="fa fa-users" aria-hidden="true"></i> My Account</a>
+                  </p>
+                  <p class="hotline-top d-inline">
+                    <i class="fas fa-phone-alt"></i>
+                    <span class="d-none d-lg-inline-block">Hotline:</span>
+                    <a href="tel:0909300746">0909300746</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class=" scroll-window navigation navbar navbar-expand-xl shadow-sm ">
+            <div class="container-fluid">
+                <div class="col-lg-2 navigation__column left ">
+                  <div class="header__logo">
+                      <a class="ps-logo" href="#!">
+                          <img src="img/Logo_web.png" alt="Cửa Hàng Giày Sneaker Chính Hãng Tại TpHcm - KING SHOES">
+                      </a>
+                  </div>
+                </div>
+                <div class="input-group form-search d-none">
+                  <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Dollar amount (with dot and two decimal places)">
+                  <span class="input-group-text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </span>
+                </div>
+                <div class="col-lg-8 navigation__column d-xl-block offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header shadow-lg">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Danh mục</h5>
+                    <button type="button" class="cart-items" data-bs-dismiss="offcanvas" aria-label="Close">
+                      <i class="fa-solid fa-xmark"></i>
+                    </button>
+                  </div>
+                  <div class="collslapse navbar-collapse offcanvas-body" id="navbarNavDropdown">
+                    <ul class="menu navbar-nav justify-content-center " >
+                      <div class="input-group form-search-mobile d-none">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm..." aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                      </div>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#!gioithieu">Giới thiệu</a>
+                      </li>
+                      <li class="nav-item ">
+                        <a class="nav-link" href="#!sanpham" id="">Nike</a>
+                        <!-- <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul> -->
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAdidas" role="button" data-bs-toggle="dropdown" aria-expanded="false">Adidas</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAdidas">
+                          <li><a class="dropdown-item" href="#!/category/nam">Nam</a></li>
+                          <li><a class="dropdown-item" href="#!/category/nu">Nữ</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownJordan" role="button" data-bs-toggle="dropdown" aria-expanded="false">Jordan</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownJordan">
+                          <li><a class="dropdown-item" href="#!/category/air-jordan">AIR JORDAN</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownYeezy" role="button" data-bs-toggle="dropdown" aria-expanded="false">Yeezy</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownYeezy">
+                          <li><a class="dropdown-item" href="#!/category/yeezy-boost-350">YEEZY BOOST 350</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownOtherBrands" role="button" data-bs-toggle="dropdown" aria-expanded="false">Other Brands</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownOtherBrands">
+                          <li><a class="dropdown-item" href="#!/category/SNEAKER AUTHENTIC">SNEAKER AUTHENTIC</a></li>
+                          <li><a class="dropdown-item" href="#!/category/giay-the-thao-chay-bo--tap-gym">Giày thể thao chạy bộ -tập gym</a></li>
+                          <li><a class="dropdown-item" href="#!/category/giay-tennis-nike-chinh-hang">Giày tennis nike chính hãng</a></li>
+                          <li><a class="dropdown-item" href="#!/category/dep-authentic">Dép Authentic</a></li>
+                          <li><a class="dropdown-item" href="#!/category/crep-protect-ve-sinh-giay-sneaker">Crep Protect vệ sinh giày Sneaker</a></li>
+                          <li><a class="dropdown-item" href="#!/category/giay-thanh-ly">Giày Thanh Lý</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item"><a class="nav-link" href="#!/sale">Sale</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#!/day-giay">Dây Giày</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#!/spa-giay">Spa Giày</a></li>
+                      <li class="nav-item"><a class="nav-link" href="#!lienhe">Liên hệ</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-lg-2 navigation__column right d-flex align-items-center justify-content-flex-end">
+                    <div class="items d-flex align-items-center ">
+                        <!-- <div class="cart-items">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </div> -->
+                        <a href="#!giohang">
+                          <div class="cart-items">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span>0</span>
+                        </div>
+                        </a>
+                        <div class="cart-items">
+                            <i class="fa-regular fa-heart"></i>
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="menulist d-none">
+                        <i class="fa-solid fa-bars" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                    </div>
+                </div>
+            </div>
+          </nav>
+    </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/Banner-2.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <section id="Service" class="pt-5 pb-4">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-4">
+            <div class="box-icon">
+              <div class="icon-header">
+                  <span class="icon-box-icon icon-shipping">
+                    <i class="fa-solid fa-wallet"></i>
+                  </span>
+                  <h3>CAM KẾT CHÍNH HÃNG</h3>
+                  <p>100 % Authentic</p>
+              </div>
+              <div class="icon-content">
+                  <p>Cam kết sản phẩm chính hãng từ Châu Âu, Châu Mỹ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-4">
+            <div class="box-icon">
+              <div class="icon-header">
+                  <span class="icon-box-icon icon-shipping">
+                    <i class="fa-solid fa-truck-fast"></i>
+                  </span>
+                  <h3>Giao hàng hỏa tốc</h3>
+                  <p>Express delivery</p>
+              </div>
+              <div class="icon-content">
+                  <p>SHIP hỏa tốc 1h nhận hàng trong nội thành HCM</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-12 mb-4">
+            <div class="box-icon">
+              <div class="icon-header">
+                  <span class="icon-box-icon icon-shipping">
+                    <i class="fa-solid fa-headset"></i>
+                  </span>
+                  <h3>Hỗ  trợ 24/24</h3>
+                  <p>Supporting 24/24</p>
+              </div>
+              <div class="icon-content">
+                <p>Gọi ngay <a href="tel:0909300746"><strong>0909300746</strong></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer  id="footer" class="bg-black">
+      <div class="container-fluid mb-0">
+        <div class="row pt-3 justify-content-between">
+          <div class="col-lg-3 col-sm-12  col-md-5 ft-left border-right">
+            <div class="ft-logo">
+              <img src="img/Logo_web.png" alt="">
+            </div>
+            <div class="info-made d-flex flex-column">
+              <h4>
+                Thông tin liên hệ
+              </h4>
+              <div class="info-ct">
+                <h5 class="info-ft-ct">⛪Địa chỉ: 18/4 Mỹ Huề ,Trung Chánh ,Hóc Môn </h5>
+                <h5 class="info-ft-ct">  Email : phamthetoan.aloa.vn@gmail.com </h5>
+                <h5 class="info-ft-ct"> Fanpage chính thức: <a href="">Phạm Toàn</a> </h5>
+                <h5 class="info-ft-ct"> ☎️ Hotline Hỗ Trợ: 0909.300.746 - 0909.45.0001 </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9 col-sm-12 col-md-7 ">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-3 col-sm-4">
+                    <div class="gioithieu">
+                      <h4>Hỗ Trợ Khách Hàng</h4>
+                      <div class="list-thongtin">
+                        <li><a href="">Chăm sóc khách hàng</a></li>
+                          <li><a href="">Thanh toán</a></li>
+                          <li><a href="">Hướng dẫn mua hàng</a></li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-3">
+                    <div class="gioithieu">
+                      <h4>Chính sách</h4>
+                      <div class="list-thongtin">
+                        <li><a href="">Chế độ bảo hành</a></li>
+                          <li><a href="">Chính sách đổi hàng</a></li>
+                          <li><a href="">Bảo mật thông tin</a></li>
+                          <li><a href="">Chính sách giao nhận</a></li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-sm-5">
+                    <div class="gioithieu">
+                      <h4>Chứng nhận</h4>
+                      <div class="list-thongtin">
+                        <p>Số ĐKKD: 41N8041309 cấp ngày 17/8/2018. Nơi cấp Ủy Ban Nhân Dân Quận Tân Bình. Hộ Kinh Doanh: KINGSHOES. Hotline: 0909.300.746</p>
+                        <li>
+                          <img src="img/chungnhan.png" alt="">
+                        </li>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+          </div>  
+          <div class="col-lg-12">
+            <div class="coppyright"> © Coppyright PS31110_PHAMTHETOAN_2024 </div>
+          </div>
+        </div>
+        </div>
+    </footer>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://kit.fontawesome.com/d22cbf7e70.js" crossorigin="anonymous"></script>
+  <script src="js/angular.min.js"></script>
+  <script src="js/angular-route.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+ -->
